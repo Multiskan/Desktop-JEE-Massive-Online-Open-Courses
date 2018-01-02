@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="mooc-ejb">
+	<jta-data-source>java:/MoodDS</jta-data-source>
+	<class>edu.esprit.mooc.domain.Entity.User</class>
+	<class>edu.esprit.mooc.domain.Entity.Message</class>
+	<class>edu.esprit.mooc.domain.Entity.Respond</class>
+	<class>edu.esprit.mooc.domain.Entity.Survey</class>
+	<class>edu.esprit.mooc.domain.Entity.SurveyProposition</class>
+	<class>edu.esprit.mooc.domain.Entity.SurveyQst</class>
+	<class>edu.esprit.mooc.domain.Entity.Admin</class>
+	<class>edu.esprit.mooc.domain.Entity.ComiteeMembre</class>
+	<class>edu.esprit.mooc.domain.Entity.Course</class>
+	<class>edu.esprit.mooc.domain.Entity.CourseStatut</class>
+	<class>edu.esprit.mooc.domain.Entity.Learner</class>
+	<class>edu.esprit.mooc.domain.Entity.Trainer</class>
+	<class>edu.esprit.mooc.domain.Entity.Tags</class>
+	<class>edu.esprit.mooc.domain.Entity.Request</class>
+	
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	
+	</persistence-unit>
+</persistence>
